@@ -1,0 +1,386 @@
+.booking_box {
+    display: flex;
+    gap: 50px;
+
+    position: relative;
+}
+
+.booking_title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e9ece0;
+    margin: 30px 0 30px 0;
+}
+
+.booking_left {
+    width: 50%;
+}
+
+.chose_service {
+    margin-bottom: 100px;
+}
+
+.service_block {
+    margin-bottom: 24px;
+}
+
+.service_title {
+    width: 100%;
+    height: 70px;
+    background-color: $buttonSecondColor;
+
+    padding-left: 78px;
+
+    position: relative;
+
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: $secondaryGray;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: $secondaryGray;
+    }
+}
+
+.service_inner {
+    padding: 24px;
+
+    background-color: #fcfcfc;
+
+    h1 {
+        font-weight: 600;
+    }
+}
+
+details > summary {
+    list-style: none;
+}
+
+.details_plus {
+    width: 34px;
+    height: 34px;
+    background: url(../html/media/booking/plus.svg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translate(0,-50%);
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.details_plus.active {
+    background: url(../html/media/booking/check.svg) no-repeat;
+}
+
+.booking_block {
+    margin-bottom: 100px;
+}
+
+/*Booking right*/
+.container_right {
+    width: 50%;
+}
+
+.booking_right {
+    width: 450px;
+    padding: 24px;
+    border: 1px solid #000;
+
+    position: sticky;
+    top: 100px;
+}
+
+.title_block {
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.booking_right_title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000;
+
+    padding-right: 5px;
+    border-right: 0.8px solid $secondary;
+}
+
+.booking_right_subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+/*Check menu*/
+.check_menu {
+    padding: 16px 0;
+    margin-bottom: 24px;
+
+    height: 70px;
+    border: 1px solid $secondaryGray;
+
+    display: flex;
+}
+
+.check_menu_block {
+    width: 33.33%;
+    padding-left: 10px;
+
+    border-right: 0.8px solid $secondaryGray;
+}
+
+.check_menu_block:last-child {
+    border: none;
+}
+
+.check_text {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.check_number {
+    font-size: 14px;
+}
+
+.guest {
+    display: flex;
+}
+
+.booking_btn {
+    border: none;
+    background-color: inherit;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.booking_price {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.price_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking_price_text {
+    font-weight: 400;
+}
+
+.discount {
+    color: #41906d;
+}
+
+.price_line {
+    margin: 30px 0;
+}
+
+.total_price {
+    margin-bottom: 30px;
+}
+
+.total {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+/*aside*/
+.aside {
+    display: none;
+
+    width: 35px;
+    height: 100px;
+    padding-left: 5px;
+    border-radius: 10px 0 0 10px;
+
+    text-align: center;
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 99;
+}
+
+/*Price btn*/
+.price_button_block {
+    height: 50px;
+    margin-bottom: 30px;
+
+    display: flex;
+}
+
+.input_coupon {
+    height: 100%;
+    width: 70%;
+    border: 0.8px solid $secondaryGray;
+    outline: none;
+    padding-left: 8px;
+    
+    &::placeholder {
+        color: $secondaryGray;
+    }
+}
+
+.price_btn {
+    height: 100%;
+    width: 30%;
+}
+
+.book_btn {
+    width: 100%;
+    height: 60px;
+}
+
+/*Adaptive*/
+@media (max-width: 900px) {
+    .booking_box {
+        gap: 25px;
+    }
+
+    .container_right {
+        width: 40%;
+    }
+
+    .booking_right {
+        width: 345px;
+        padding: 18px;
+    }
+
+    .title_block, .check_menu {
+        margin-bottom: 10px;
+    }
+
+    .booking_price {
+        gap: 15px;
+    }
+
+    .price_line {
+        margin: 15px 0;
+    }
+
+    .total_price {
+        margin-bottom: 15px;
+    }
+
+    .price_button_block {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service_title {
+        font-size: 16px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .booking_title {
+        font-size: 34px;
+    }
+
+    .booking_title::after {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hunt_main {
+        height: 280px;
+    }
+
+    .container_hunt {
+        margin-top: 80px;
+    }
+
+    .booking_title {
+        font-size: 28px;
+    }
+
+    .chose_service {
+        margin-bottom: 50px;
+    }
+
+    .booking_block {
+        margin-bottom: 50px;
+    }
+
+    .booking_right {
+        width: 265px;
+    }
+
+    .title_block {
+        gap: 14px;
+    }
+
+    .booking_right_title {
+        font-size: 16px;
+    }
+
+    .booking_right_subtitle {
+        font-size: 16px;
+    }
+
+    .check_number {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_hunt {
+        display: block;
+    }
+    
+    .booking_left {
+        width: 100%;
+    }
+
+    .booking_right {
+        display: none;
+    }
+
+    .booking_right.active {
+        display: block;
+
+        padding-right: 45px;
+        background-color: #fff;
+        
+        width: 100%;
+        height: 100vh;
+        
+        position: fixed;
+        left: 0;
+        top: 100px;
+        z-index: 4;
+        
+    }
+
+    .aside {
+        display: block;
+        padding-left: 5px;
+    }
+}
