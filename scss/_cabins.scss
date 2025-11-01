@@ -1,0 +1,89 @@
+.cabins {
+    margin: 145px 0 150px;
+    padding-left: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.text_block {
+    width: 50%;
+    height: auto;
+}
+
+.cabins_img_block {
+    width: 50%;
+    height: auto;
+    
+    img {
+        width: 100%;
+    }
+}
+
+
+
+//text_block
+.text_block_inner {
+    width: 465px;
+    margin: 0 auto;
+}
+
+.cabins_text {
+    margin: 50px 0 15px;
+}
+
+//Gallery
+.cabins_gallery {
+    margin-bottom: 150px;
+    
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    img {
+        width: 32%;
+    }
+}
+
+@media (max-width: $breakpoint900) {
+    .cabins {
+        margin-bottom: 100px;
+    }
+    
+    .text_block_inner {
+        width: 350px;
+    }
+    
+    .cabins_text {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 730px) {
+    .cabins {
+        margin-bottom: 50px;
+        padding: 0 20px;
+        
+        flex-direction: column;
+    }
+    
+    .text_block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .text_block_inner {
+        width: 100%;
+    }
+    
+    .cabins_img_block {
+        width: 100%;
+    }
+    
+    .cabins_gallery {
+        margin-bottom: 100px;
+    }
+}
+
+

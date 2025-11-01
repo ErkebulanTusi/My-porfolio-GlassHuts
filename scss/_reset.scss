@@ -1,0 +1,47 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+a {
+    font-family: "DIN", sans-serif;
+    font-weight: 300;
+    color: $primary;
+    text-decoration-color: #fff;
+    cursor: pointer;
+    
+    transition: text-decoration-color 0.3s ease-in-out;
+    
+    &:hover {
+        text-decoration-color: #000;
+    }
+}
+
+.btn {
+    font-family: $buttonFonts;
+    color: #fff;
+    
+    cursor: pointer;
+    
+    border: none;
+    outline: none;
+    background-color: $buttonColor;
+    
+    transition: background-color 0.2s linear;
+    
+    &:hover {
+        background-color: $buttonHoverColor;
+    }
+}
+

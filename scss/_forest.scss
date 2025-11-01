@@ -1,0 +1,34 @@
+.the_forest {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    
+    background-color: $buttonSecondColor;
+    
+    a {
+        text-decoration-color: $buttonSecondColor;
+        
+        &:hover {
+            text-decoration-color: #000;
+        }
+    }
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 730px) {
+    .the_forest {
+        padding: 20px;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    
+    .map {
+        width: 100%;
+        height: 350px;
+    }
+}

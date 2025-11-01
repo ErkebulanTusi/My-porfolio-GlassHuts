@@ -1,0 +1,70 @@
+.about_us {
+    width: 100%;
+    display: flex;
+    
+    position: relative;
+}
+
+.about_us_img {
+    width: 50%;
+}
+
+//circle
+.circle_link {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: $buttonColor;
+    
+    text-decoration: none;
+    
+    p {
+        font-family: "DIN", sans-serif;
+        font-weight: 300;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    &:hover {
+        background-color: $buttonSecondColor;
+        
+        p {
+            color: $secondaryGray;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .about_us {
+        flex-direction: column;
+    }
+    
+    .about_us_img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+     .about_us_img {
+        height: 385px;
+    }
+}
+
+
+
+
+
+
+

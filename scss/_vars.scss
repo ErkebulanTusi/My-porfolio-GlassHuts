@@ -1,0 +1,30 @@
+//Container and Breakpoints
+@use 'sass:math';
+$containerWidth: 1408px;
+$breakpoint1450: 1449.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+$breakpoint900: 889.98 + px;
+
+//Burger Menu
+$burgerBreakpoints: $breakpoint992;
+$burgercolor: 'black';
+$burgerActiveColor: 'white';
+
+//Color
+$backgroundColor: #fff;
+$primary: #000000;
+$secondary: #5B6460;
+$secondaryGray: #333333;
+
+//Fonts
+$primaryFonts: "DIN", sans-serif;
+$secondaryFonts: "Open Sans", sans-serif;
+
+//Buttton Style
+$buttonFonts: "DIN", sans-serif;
+$buttonColor: #5B6460;
+$buttonSecondColor: #E9ECE0;
+$buttonHoverColor: #808E88; 
+

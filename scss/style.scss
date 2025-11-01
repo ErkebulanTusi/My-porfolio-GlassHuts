@@ -1,0 +1,25 @@
+// Global SCSS-files imports
+@import 'vars';
+@import 'reset';
+@import 'fonts';
+@import 'text';
+
+
+//Content block imports
+@import 'header';
+@import 'hero';
+@import 'cabins';
+@import 'forest';
+@import 'facilities';
+@import 'about_us';
+@import 'stay_in_touch';
+@import 'footer';
+
+//Slider
+@import 'slider';
+
+//The Hunt
+@import '../html/scss/hunt';
+@import '../html/scss/area';
+@import '../html/scss/booking';
+

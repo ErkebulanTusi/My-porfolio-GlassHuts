@@ -1,0 +1,135 @@
+.stay_in_touch {
+    width: 100%;
+    padding: 150px 20px 130px;
+    
+    display: flex;
+}
+
+.stay_in_touch_inner {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stay_in_touch_link {
+    width: 385px;
+    
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    
+    p {
+        margin: 50px 0 20px;
+    }
+}
+
+
+
+.messengers {
+    margin-top: 50px;
+    
+    display: flex;
+    gap: 42px;
+    
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $buttonColor;
+        
+        opacity: 0.8;
+    }
+    
+    a:hover {
+        opacity: 1;
+    }
+}
+
+.stay_in_touch_btn {
+    width: 386px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_div {
+    display: flex;
+}
+
+.touch_btn {
+    width: 264px;
+    height: 100px;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.touch_price {
+    width: 120px;
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    background-color: $buttonSecondColor;
+    
+    p {
+        font-family: $buttonFonts;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+
+        color: $secondaryGray;
+    }
+    
+    & p:last-child {
+        text-align: right;
+    }
+}
+
+@media (max-width: 730px) {
+    .stay_in_touch {
+        flex-direction: column;
+    }
+    
+    .stay_in_touch_inner {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .stay_in_touch_link {
+        text-align: center;
+    }
+    
+    .messengers {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .stay_in_touch_btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

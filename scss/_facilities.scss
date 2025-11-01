@@ -1,0 +1,63 @@
+.facilities {
+    width: 100%;
+    height: auto;
+    
+    padding: 150px 20px 126px;
+    
+    text-align: center;
+    
+    background-color: $secondary;
+    
+    h1 {
+        margin-bottom: 100px;
+        font-weight: 300;
+        color: #fff;
+    }
+    
+    p {
+        color: #fff;
+    }
+}
+
+.facilities_inner {
+    margin: 0 auto;
+    
+    width: 830px;
+    height: 555px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facilities_block {
+    width: 25%;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 900px) {
+    .facilities_inner {
+        width: 600px;
+    }
+}
+
+@media (max-width: 730px) {
+    .facilities h1 {
+        margin-bottom: 65px;
+    }
+    
+    .facilities_inner {
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .facilities_inner {
+        height: auto;
+    }
+    
+    .facilities_block {
+        width: 50%;
+    }
+}
