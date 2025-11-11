@@ -28,6 +28,18 @@ a:hover {
   text-decoration-color: #000;
 }
 
+.box {
+    /*Test animation*/
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.3s ease;
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .btn {
   font-family: "DIN", sans-serif;
   color: #fff;
