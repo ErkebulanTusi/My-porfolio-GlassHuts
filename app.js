@@ -161,6 +161,23 @@ $(function() {
         bookingRight.toggleClass("active");
     }); 
 
+function checkBoxes() {
+  const triggerBottom = window.innerHeight * 0.85; // Когда элемент появляется на 85% высоты экрана
+  const scrollBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight -50;
 
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom || scrollBottom) {
+      box.classList.add('show'); // Добавляем класс — включается анимация
+    } else {
+      box.classList.remove('show'); // Можно убрать, если хочешь чтобы исчезали при скролле вверх
+    }
+  });
+}
+
+window.addEventListener('scroll', checkBoxes);
+checkBoxes(); // Проверяем при загрузке 
 
 });
+
