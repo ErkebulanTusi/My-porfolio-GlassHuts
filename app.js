@@ -161,6 +161,7 @@ $(function() {
         bookingRight.toggleClass("active");
     }); 
 
+const boxes = document.querySelectorAll(".box");
 function checkBoxes() {
   const triggerBottom = window.innerHeight * 0.85; // Когда элемент появляется на 85% высоты экрана
   const scrollBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight -50;
@@ -180,4 +181,5 @@ window.addEventListener('scroll', checkBoxes);
 checkBoxes(); // Проверяем при загрузке 
 
 });
+
 
